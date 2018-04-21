@@ -21,3 +21,6 @@ This is a programme that show your favaorite fiction,and it does not show  any a
 
 ### step 3
 ```npm start```
+
+### step 4
+input ${ip}:3000 in your browerser

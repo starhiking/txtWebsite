@@ -1,9 +1,10 @@
 # txtWebsite
+
 This is a programme that show your favaorite fiction,and it does not show  any advertisement
 
 ## feature
 
-1.No sqls 
+1.No sqls
 
 2.Install easily
 
@@ -14,13 +15,17 @@ This is a programme that show your favaorite fiction,and it does not show  any a
 ## steps to install
 
 ### step 1
+
 ```git clone https://github.com/starhiking/txtWebsite.git```
 
 ### step 2
+
 ```cd txtWebsite && npm install```
 
 ### step 3
+
 ```npm start```
 
 ### step 4
+
 input ${ip}:3000 in your browerser

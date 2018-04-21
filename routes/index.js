@@ -4,6 +4,7 @@ var getContent = require('../module/searchcontent');
 var getFictionMes = require("../module/spiderFiction")
 var getNameById = require('../module/getNameById');
 var refreshDb = require('../module/refreshDb');
+var dbOperation = require('../module/jsonOperation');
 
 module.exports = (app) => {
   app.get('/', (req, res) => {
@@ -44,20 +45,23 @@ module.exports = (app) => {
       res.render('content', backresult);
     }
 
+  });
+
+  // delete?fid=4
+  app.get('/delete',(req,res)=>{
+    var fid = req.query.fid;
+    dbOperation.delete(fid);
+    res.redirect('/');
+  });
+
+  app.get('/add',(req,res)=>{
+    var url = req.query.url;
+    dbOperation.add(url);
+    res.redirect('/');
+    
   })
 
-  app.get('/test', (req, res) => {
-    var url = 'http://www.biquge5200.com/79_79883/';
-    console.log(getFictionMes(url, getFictionRes));
 
-  })
 }
 
-function getFictionRes(err, message) {
-  //console.log(message);
-  if (err) {
-    console.log(err);
-  } else
-    return message;
-}
 

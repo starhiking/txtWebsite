@@ -4,8 +4,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>小说主页</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title>小说主页</title>
 </head>
 
 <body>
@@ -51,7 +51,7 @@
                 </div>
                 <div class="col-xs-offset-3 col-xs-3">
                     <a href="#">
-                        <button type="button" class="btn btn-primary" onclick="confirmDialog('龙王传说')">删除</button>
+                        <button type="button" class="btn btn-primary" onclick="confirmDialog('<%= data[i].fictionName %>',<%= data[i].fid %>)">删除</button>
                     </a>
                 </div>
                 <div class="col-xs-3">
@@ -77,15 +77,20 @@
 
     </div>
     <script type="text/javascript">
-        function confirmDialog(str) {
-            confirm("确认删除" + str);
+        function confirmDialog(str, id) {
+            var result = confirm("确认删除" + str);
+            if (result) self.location = '/delete?fid=' + id;
         }
 
 
         function promptDialog() {
-            var addUrl = prompt("输入添加的网址：");
+            var addUrl = prompt("输入添加的目录网址(目前只支持笔趣阁)：");
             if (addUrl != null) {
-
+                //https://www.biquge5200.com/76_76934/
+                if (addUrl.split('/')[2] == 'www.biquge5200.com')
+                    self.location = '/add?url=' + addUrl;
+                else alert("目前只支持笔趣阁");
+                
             } else {
 
             }

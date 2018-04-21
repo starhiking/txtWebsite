@@ -1,46 +1,61 @@
-[   
-    {
-        "fid":1,
-        "titleUrl":"https://www.biquge5200.com/76_76934/",
-        "fictionName":"我的姐姐是大明星",
-        "lastUpdateTime":"2018-04-08",
-        "lastUpdateTitle":"好心机",
-        "lastViewTitle":"秦泽的嘴炮",
-        "lastUpdateNum":1000,
-        "havedNum":100,
-        "status":1
-    },
-    {
-        "fid":2,
-        "titleUrl":"https://www.biquge5200.com/23_23934/",
-        "fictionName":"龙王传说",
-        "lastUpdateTime":"2018-04-09",
-        "lastUpdateTitle":"第一千七百零六章越天神枪",
-        "lastViewTitle":"还未开始阅读",
-        "lastUpdateNum":1000,
-        "havedNum":0,
-        "status":0
-    },
-    {
-        "fid":3,
-        "titleUrl":"https://www.biquge5200.com/79_79883/",
-        "fictionName":"元尊",
-        "lastUpdateTime":"2018-04-21",
-        "lastUpdateTitle":"第三百七十七章月陨术",
-        "lastViewTitle":"还未开始阅读",
-        "lastUpdateNum":1000,
-        "havedNum":0,
-        "status":1
-    },
-    {
-        "fid":4,
-        "titleUrl":"https://www.biquge5200.com/0_195/",
-        "fictionName":"超品相师",
-        "lastUpdateTime":"2018-02-13",
-        "lastUpdateTitle":"结束语",
-        "lastViewTitle":"还未开始阅读",
-        "lastUpdateNum":1000,
-        "havedNum":0,
-        "status":1
-    }
-]
+[{
+    "fid": 3,
+    "titleUrl": "https://www.biquge5200.com/79_79883/",
+    "fictionName": "元尊",
+    "lastUpdateTime": "2018-04-21",
+    "lastUpdateTitle": "第三百七十七章月陨术",
+    "lastViewTitle": "还未开始阅读",
+    "lastUpdateNum": 1000,
+    "havedNum": 0,
+    "status": 1
+}, {
+    "titleUrl": "https://www.biquge5200.com/23_23934/",
+    "fictionName": "龙王传说",
+    "lastUpdateTime": "2018-04-21",
+    "lastUpdateNum": 1734,
+    "lastUpdateTitle": "第一千七百三十一章变化的凌梓晨",
+    "havedNum": 0,
+    "lastViewTitle": "还未开始阅读",
+    "status": 1,
+    "fid": 2
+}, {
+    "titleUrl": "https://www.biquge5200.com/76_76934/",
+    "fictionName": "我的姐姐是大明星",
+    "lastUpdateTime": "2018-04-21",
+    "lastUpdateNum": 651,
+    "lastUpdateTitle": "639明晚陪你睡感谢幽明之羽的盟主",
+    "havedNum": 0,
+    "lastViewTitle": "还未开始阅读",
+    "status": 1,
+    "fid": 1
+}, {
+    "titleUrl": "https://www.biquge5200.com/54_54576/",
+    "fictionName": "天下第一师兄",
+    "lastUpdateTime": "2018-04-22",
+    "lastUpdateNum": 964,
+    "lastUpdateTitle": "第九百六十二章我要回家",
+    "havedNum": 0,
+    "lastViewTitle": "还未开始阅读",
+    "status": 1,
+    "fid": 5
+}, {
+    "titleUrl": "https://www.biquge5200.com/66_66813/",
+    "fictionName": "古仙封魔",
+    "lastUpdateTime": "2018-04-22",
+    "lastUpdateNum": 684,
+    "lastUpdateTitle": "第六八六章通天仙梯",
+    "havedNum": 0,
+    "lastViewTitle": "还未开始阅读",
+    "status": 1,
+    "fid": 6
+}, {
+    "titleUrl": "https://www.biquge5200.com/0_195/",
+    "fictionName": "超品相师",
+    "lastUpdateTime": "2018-02-13",
+    "lastUpdateNum": 4998,
+    "lastUpdateTitle": "结束语",
+    "havedNum": 0,
+    "lastViewTitle": "还未开始阅读",
+    "status": 1,
+    "fid": 4
+}]

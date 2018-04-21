@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="utf-8">
+  <title><%= ftitle %></title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
+</head>
+
+<body>
+  <div class="wrap clearfix">
+    <div class="section bindex">
+
+      <h1 style="text-align:center;"><%= ftitle %></h1>
+      <h4 style="text-align:center;"><%= ctitle %></h4>
+      <div class="blink gyb bl3 mt5">
+        <div style="text-align: center;">
+          <a href='/content?fid=<%=fid%>&section=<%= parseInt(section)-1 %>' class="last">
+            上一章
+          </a>
+          &nbsp &nbsp
+
+          <a href="/directory?fid=<%= fid %>" class="last">
+            目录
+          </a>
+
+
+          &nbsp &nbsp
+          <a href='/content?fid=<%=fid%>&section=<%= parseInt(section)+1 %>' class="last">
+            下一章
+          </a>
+
+        </div>
+
+        <hr style="height:1px;border:none;border-top:1px dashed #0066CC;" />
+
+        <% for(var i = 0;i<content.length;i++ ){ %>
+          <p><%= content[i]%></p>
+        <%}%>
+        
+        <hr style="height:1px;border:none;border-top:1px dashed #0066CC;" />
+
+
+        <style>
+          .font_bk {
+            border: 1px solid #ccc;
+          }
+        </style>
+        <div style="text-align: center;">
+          <span class="font_bk">
+            <a href='/content?fid=<%=fid%>&section=<%= parseInt(section)-1 %>' class="cur">
+              上一章
+            </a>
+          </span>
+          &nbsp &nbsp
+          <span class="font_bk">
+            <a href="/directory?fid=<%= fid %>" class="cur">
+              目录
+            </a>
+          </span>
+          &nbsp &nbsp
+          <span class="font_bk">
+            <a href='/content?fid=<%=fid%>&section=<%= parseInt(section)+1 %>' class="cur">
+              下一章
+            </a>
+          </span>
+
+</body>
+
+</html>

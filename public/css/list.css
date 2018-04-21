@@ -1,0 +1,296 @@
+body{font: 1px "微软雅黑", "Arial Narrow";font-size:14px;}
+*{margin:0px;padding:0px;}
+.clear{clear:both}
+a{text-decoration:none; color: #000;}
+ul li{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size:12px; font-weight:normal;}
+img{border:0; vertical-align:middle;}
+a:link {text-decoration: none;}
+.leftpic,.txt,.rightpic,.sub_menu h3,.conterpic,.more,.menu_nav p a,.sub_menu1 h3,.sub_menu2 h3,.sub_menu3 h3,.footer_pic,.branch_menu h3,.infohead .infolink p,.info_menu h3,.info_menu1 h3,.chaptertilebg,.content_title p,.novelbutton p{background: url('tu.png')}
+
+.main{width: 100%;}
+.head{height: 50px; position: relative;top: 0px;overflow: hidden;background: #47A1DF;border-bottom:1px solid #60b6f2}
+.logo{height: 30px; overflow: hidden;margin-top:10px;margin-left:10px;}
+.logo a{font-size: 26px; color: #fff; font-weight: bold;}
+.loginbar{position: absolute;right: 5px; top: 10px; width: 130px; height:30px;}
+.loginbar p{position: relative;float: left;width:60px; height:30px;line-height: 30px;text-align:center; margin-left:5px; background: #1880c7;border-radius: 5px;}
+.loginbar a{color:#fff;font-size:15px;font-weight:bold;}
+.nav{ height: 40px;background: #47A1DF;line-height: 40px;border-top:1px solid #1d7fc2}
+.nav ul{margin: auto;}
+.nav ul li{float: left; width:20%; text-align: center }
+.nav ul li a{color: #FFF;font-size:16px;font-weight:bold}
+.main1{margin:10px;}
+.searchbox{position: relative;height: 30px;}
+.searchbox .leftpic{position: absolute; left: 0px; width: 28px; height: 50px;background-position: -0px -77px; }
+.searchbox .txt{position: absolute; left: 26px;right:70px; background-position: -0px -0px; height: 30px;}
+.searchbox .rightpic{position: absolute; right: 0px; background-position: -50px -77px; width: 70px; height: 30px;}
+.searchbox #txt1{position: absolute;top: 3px; left: 0px; right: 50px;height: 23px; width: 100%; border: 0; background: #EFF7F9;}
+.searchbox #txt2{position: absolute;top: 6px; right: -60px;z-index: 1; background:none; border: none; color: #FFF;}
+
+.sub_menu{position: relative; top:20px;}
+.sub_menu h3{background-position: -0px -204px; width: 100px; height: 50px; overflow: hidden;line-height: 46px;}
+.sub_menu h3 a{font-weight: bold; font-size: 14px; color: #47A1DF;padding-left:20px;}
+.sub_menu .conterpic{position: absolute; top: 42px; left: 99px; right: 101px; height: 10px; background-position: -0px -185px;  }
+.sub_menu .rightpic{position: absolute; right: 0px; top: 42px;  width: 105px; height: 10px; background-position: -116px -246px;}
+.sub_menu .more{position: absolute; right: 0px; top: 30px; width: 13px; height: 13px; background-position: -294px -86px; line-height: 50px; overflow: hidden;}
+.sub_menu .more a{display: block;}
+.menu_nav{height:16px; width: 95%; margin-left: 15px;overflow: hidden}
+.menu_nav p{float: left; width: 20%;}
+.menu_nav p a{ background-position: -0px -127px; padding-left: 10px;color: #47A1DF;}
+.sub_menu .list{width: 96%; margin-left: 15px; margin-top: 10px;}
+.sub_menu .list li{float: left; width: 25%;overflow: hidden; }
+.sub_menu .list .p2{ width: 82px; overflow: hidden; margin-top: 5px; line-height: 15px;}
+.sub_menu .list .p3 {line-height: 16px; height: 16px; margin-top: 3px;}
+.sub_menu .list .p3 a{color: #999;}
+
+.sub_menu1{position: relative; top:18px; margin:10px 10px 0px 10px;font-size:14px;}
+.sub_menu1 h3{background-position: -0px -204px; width: 100px; height: 50px; overflow: hidden;line-height: 46px;}
+.sub_menu1 h3 a{font-weight: bold; font-size: 14px; color: #47A1DF;padding-left:20px;}
+.sub_menu1 .conterpic{position: absolute; top: 42px; left: 99px; right: 101px; height: 10px; background-position: -0px -185px;  }
+.sub_menu1 .rightpic{position: absolute; right: 0px; top: 42px;  width: 105px; height: 10px; background-position: -116px -246px;}
+.sub_menu1 .more{position: absolute; right: 0px; top: 30px; width: 13px; height: 13px; background-position: -294px -86px; line-height: 50px; overflow: hidden;}
+.sub_menu1 .more a{display: block;}
+.sub_menu1 .list{margin:10px 0px;}
+.sub_menu1 .list li{float: left; width: 23%;overflow: hidden;margin:0px 1%;text-align: center; }
+.sub_menu1 .list .p2{overflow: hidden;height:20px;line-height:20px;text-align:center;font-size:12px;font-weight:bold;}
+.sub_menu1 .list .p2 a{color:#47A1DF;}
+.sub_menu1 .list .p3 {line-height: 16px; height: 16px;overflow:hidden;text-align:center;font-size:12px;color:#999}
+.sub_menu1 .list .p3 a{color: #999;}
+
+.sub_menu2{position: relative; top:18px; margin:20px 5px 0px 5px; font-size:14px;}
+.sub_menu2 h3{background-position: -0px -204px; width: 100px; height: 50px; overflow: hidden;line-height: 46px;}
+.sub_menu2 h3 a{font-weight: bold; font-size: 14px; color: #47A1DF;padding-left:20px;}
+.sub_menu2 .conterpic{position: absolute; top: 42px; left: 99px; right: 101px; height: 10px; background-position: -0px -185px;  }
+.sub_menu2 .rightpic{position: absolute; right: 0px; top: 42px;  width: 105px; height: 10px; background-position: -116px -246px;}
+.sub_menu2 .more{position: absolute; right: 0px; top: 30px; width: 13px; height: 13px; background-position: -294px -86px; line-height: 50px; overflow: hidden;}
+.sub_menu2 .more a{display: block;}
+.sub_menu2 .article{position: relative; margin:10px;}
+.sub_menu2 .article .pic{width: 80px;}
+.sub_menu2 .article .content{position: absolute;left: 85px;right:0px; top: 0px;}
+.sub_menu2 .content h6{ height: 18px; overflow: hidden;background: none;}
+.sub_menu2 .content h6 a{font-size:14px;color:#47A1DF;font-weight:bold}
+.sub_menu2 .content .leftpic{position: absolute; top: 10px;left: 0px; right: 0px; background-position: -0px -290px; height: 10px;}
+.sub_menu2 .content .rightpic{position: absolute; top: 13px; right: 0px; background-position: -0px -345px; height: 10px; width: 53px;}
+.sub_menu2 .content .author{margin-top: 5px;}
+.sub_menu2 .content .author a{color: #666;}
+.sub_menu2 .content .simple{color: #999; height: 60px; overflow: hidden; margin-top: 5px; line-height:20px;}
+.sub_menu2 .article .list{ margin-top: 10px;}
+.sub_menu2 .list li{height:30px; line-height:30px; overflow: hidden; color:#999;}
+.sub_menu2 .list .s1{margin-right: 10px;}
+.sub_menu2 .list .s1 a{color: #999;}
+.sub_menu2 .list .s2{margin-right: 10px;}
+.sub_menu2 .list .s2 a{color:#47A1DF;font-weight:bold;}
+.sub_menu2 .list .s3{margin-left: 10px;}
+.sub_menu2 .list .s3 a{color: #999;}
+
+.sub_menu3{position: relative; top:10px; padding-bottom: 20px;margin:10px 10px 0px 10px}
+.sub_menu3 h3{background-position: -0px -204px; width: 100px; height: 50px; overflow: hidden;line-height: 46px;}
+.sub_menu3 h3 a{font-weight: bold; font-size: 14px; color: #47A1DF;padding-left:20px;}
+.sub_menu3 .conterpic{position: absolute; top: 42px; left: 99px; right: 101px; height: 10px; background-position: -0px -185px;  }
+.sub_menu3 .rightpic{position: absolute; right: 0px; top: 42px;  width: 105px; height: 10px; background-position: -116px -246px;}
+.sub_menu3 .more{position: absolute; right: 0px; top: 30px; width: 13px; height: 13px; background-position: -294px -86px; line-height: 50px; overflow: hidden;}
+.sub_menu3 .more a{display: block;}
+.sub_menu3 .menu_nav{height:16px; width: 95%; margin-left: 15px;overflow: hidden}
+.sub_menu3 .menu_nav p{frloat: left; width: 25%;}
+.sub_menu3 .menu_nav p a{ background-position: -0px -125px; padding-left: 10px; color: #47A1DF;}
+.sub_menu3 .list{width: 96%; margin-left: 15px; margin-top: 10px;}
+.sub_menu3 .list li{float: left; width: 25%;overflow: hidden; }
+.sub_menu3 .list .p2{ width: 82px; overflow: hidden; margin-top: 5px; line-height: 15px;}
+.sub_menu3 .list .p3 {line-height: 16px; height: 16px; margin-top: 3px;}
+.sub_menu3 .list .p3 a{color: #999;}
+.sub_menu3 .menu_nav1{margin-top: 20px;}
+.sub_menu3 .list_xm{ margin-top: 10px;margin-left: 5px;}
+.sub_menu3 .list_xm li{height: 30px; line-height: 30px; overflow: hidden; color: #999;border-bottom:1px solid #ddd}
+.sub_menu3 .list_xm .s1{margin-right: 10px;}
+.sub_menu3 .list_xm .s1 a{color: #999;}
+.sub_menu3 .list_xm .s2{margin-right: 10px;}
+.sub_menu3 .list_xm .s2 a{color:#47A1DF}
+.sub_menu3 .list_xm .s3{margin-left: 10px;}
+.sub_menu3 .list_xm .s3 a{color: #999;}
+
+.footer{ margin:10px;margin-top:0px;}
+.footer .main1{margin:10px 0px;}
+.footer .footer_info{text-align:center; height: 20px; line-height: 20px; overflow: hidden; width: 100%;margin-top:0px;}
+.footer .footer_info span{margin-right: 5px; margin-left: 5px;}
+.footer .footer_info a{color: #666;font-weight:bold;}
+.footer .footer_pic{float: right;background-position: -10px -445px; width: 100px; height: 100px;}
+/* ����ҳ */
+.branch_menu{position: relative; margin-top:10px;}
+.branch_menu h3{background-position: -0px -204px; width: 100px; height: 48px; line-height: 48px;overflow: hidden;margin-left:5px;}
+.branch_menu h3 a{font-weight: bold; font-size: 14px; color: #47A1DF;padding-left:20px;}
+.branch_menu .conterpic{position: absolute; top: 42px; left: 104px; right: 101px; height: 10px; background-position: -0px -185px;  }
+.branch_menu .rightpic{position: absolute; right: 10px; top: 42px;  width: 105px; height: 10px; background-position: -116px -246px;}
+.branch_menu .more{position: absolute; right: 10px; top: 30px; width: 13px; height: 13px; background-position: -294px -86px; line-height: 50px; overflow: hidden;}
+.branch_menu .more a{display: block;}
+.branch_menu .menu_nav{margin:10px;height: auto;}
+.branch_menu .menu_nav li{float: left; width: 25%; height: 30px; line-height: 30px; overflow: hidden;font-size:15px;text-align: center;}
+.branch_menu .menu_nav li a{display: block;}
+.branch_menu .menu_nav .this a{height:28px;line-height:28px;font-weight:bold;border-bottom:1px solid #ccc}
+.branch_menu .menu_nav .pp{margin-right: 0px;}
+.branch_menu .menu_nav li a{background-position:-0px -125px;color:#47A1DF;}
+.branch_menu .article{position: relative; margin-top: 10px; width: 95%; margin-left: 15px; margin-bottom: 15px;}
+.branch_menu .article .pic{width: 80px;}
+.branch_menu .article .content{position: absolute;left: 85px;right:0px; top: 0px;}
+.branch_menu .content h6{ height: 18px; overflow: hidden;}
+.branch_menu .content h6 a{font-size: 14px;color:#47A1DF;font-weight:bold}
+.branch_menu .content .leftpic{position: absolute; top: 20px;left: 0px; right: 50px; background-position: -0px -300px; height: 10px;}
+.branch_menu .content .rightpic{position: absolute; top: 13px; right: 0px; background-position: -0px -345px; height: 10px; width: 53px;}
+.branch_menu .content .author{margin-top: 5px;}
+.branch_menu .content .author a{color: #666;}
+.branch_menu .content .simple{color: #999; height: 60px; overflow: hidden; margin-top: 5px; line-height: 20px;}
+.infohead{position: relative;margin:10px;margin-top:20px;}
+.infohead .cataloginfo{position: absolute; left: 100px; top: 0px; height: 120px; right: 0px; }
+.infohead .cataloginfo h3{background-position: -0px -204px; height: 20px; font-size: 18px; line-height: 20px; overflow: hidden;font-weight:bold;}
+.infohead .leftpic{position: absolute; top: 23px;left: 0px; right: 50px; background-position: -0px -300px; height: 10px;}
+.infohead .rightpic{position: absolute; top: 16px; right: 0px; background-position: -0px -345px; height: 10px; width: 53px;}
+.infohead .infotype{margin-top: 15px;}
+.infohead .infotype p{color: #999;height: 22px; line-height: 22px; overflow: hidden;}
+.infohead .infotype a{color:#666}
+.infohead .infolink{height: 45px; line-height:45px;overflow: hidden; margin-top: 15px;}
+.infohead .infolink li{ float: left; width:25%;}
+.infohead .infolink p{background-position: -240px -210px; height: 43px; width:120px;}
+.infohead .infolink p a{color: #47A1DF; padding-left: 15px;font-weight:bold; }
+.infohead .intro{margin-top: 15px; color: #999; line-height: 150%}
+.infohead .intro p{text-indent: 2em;}
+.info_menu{position: relative;}
+.info_menu h3{background-position: -0px -204px; width: 100px; height: 50px; overflow: hidden;line-height: 46px;margin-left:5px;}
+.info_menu h3 a{font-weight: bold; font-size: 14px; color: #47A1DF;padding-left:20px;}
+.info_menu .conterpic{position: absolute; top: 42px; left: 104px; right: 101px; height: 10px; background-position: -0px -185px; }
+.info_menu .rightpic{position: absolute; right: 10px; top: 42px;  width: 105px; height: 10px; background-position: -116px -246px;}
+.info_menu .more{position: absolute; right: 10px; top: 30px; width: 13px; height: 13px; background-position: -294px -86px; line-height: 50px; overflow: hidden;}
+.info_menu .more a{display: block;}
+.info_menu .list{margin:10px;}
+.info_menu .list li{float: left; width: 25%;overflow: hidden;text-align: center }
+.info_menu .list .p2{ width: 82px; overflow: hidden; margin-top: 5px; line-height: 15px;}
+.info_menu .list .p3 {line-height: 16px; height: 16px; margin-top: 3px;}
+.info_menu .list .p3 a{color: #999;}
+.info_menu1{position:relative;padding-bottom:0px;margin-top:20px;}
+.info_menu1 h3{background-position: -0px -204px; width: 100px; height: 50px; overflow: hidden;line-height: 46px;margin-left:5px;font-weight: bold; font-size: 14px; color: #47A1DF;padding-left:20px;}
+.info_menu1 .conterpic{position: absolute; top: 42px; left: 104px; right: 101px; height: 10px; background-position: -0px -185px; }
+.info_menu1 .rightpic{position: absolute; right: 10px; top: 42px;  width: 105px; height: 10px; background-position: -116px -246px;}
+.info_menu1 .more{position: absolute; right: 10px; top: 30px; width: 13px; height: 13px; background-position: -294px -86px; line-height: 50px; overflow: hidden;}
+.info_menu1 .more a{display: block;}
+.info_menu1 .list_xm{ margin:10px;}
+.info_menu1 .list_xm li{height: 35px; line-height: 35px; border-bottom: 1px dashed #a1d5f9;overflow: hidden; color: #999;font-size:14px;}
+.info_menu1 .gochapter{font-size:15px;font-weight:bold;text-align: center;height:40px;line-height: 40px;border-bottom: 1px solid #a1d5f9}
+
+.chapterlist .chapters{margin:10px;}
+.chapterlist .chapters li{height:35px; line-height:35px;overflow:hidden;border-bottom: 1px dashed #a1d5f9;font-size: 14px;}
+.chapterlist .paixu{position: relative;}
+.chapterlist .paixu .t1{font-size:14px;margin:10px;height:40px; line-height:40px;border-bottom:1px solid #47A1DF}
+.chapterlist .paixu .t2{position: absolute;top:10px;right:10px;}
+.chapterlist .paixu .t2 a{padding:3px 7px;border:1px solid #47A1DF;border-radius: 3px;margin-left:5px;}
+.chapterlist .paixu .this{background-color: #47A1DF;color:#fff}
+.content_top{height: 40px; background: #47A1DF; line-height: 35px;}
+.content_top li{float: left; width: 25%; text-align: center; height: 40px; overflow: hidden;}
+.content_top a{color:#FFF;font-size:16px;display:block;height:25px;line-height:25px;border-radius:3px; margin:0px 5px;margin-top:10px;font-weight:bold;}
+.content_title{position: relative;height: 80px; overflow: hidden;}
+.content_title h1{height: 50px; line-height: 50px;font-size:15px; font-weight:bold; margin: 0px auto;text-align: center; overflow: hidden;}
+.chaptertilebg{position:absolute;top:0px;left:50%;margin-left:-90px;width:180px;height:50px;background-position: -75px -310px;}
+.content_button{position: relative; height: 30px;font-size: 12px;}
+.content_button p{float: left;}
+.content_button .button_left{position: absolute; left: 30px; width: 120px; height: 25px;}
+.content_button .button_left p{ background-position: -71px -120px; width: 40px; height: 24px; line-height: 24px;text-align: center}
+.content_button .button_left p a{color: #FFF;font-weight:bold;}
+.content_button .button_right{position: absolute; right: 5px; width:110px; height: 25px;}
+.content_button .button_right p{background-position: -205px -120px; width:25px; height: 25px; line-height: 25px;text-align:center;margin-left:5px; }
+.content_button .button_right p a{color: #FFF;font-weight:bold;}
+.novelcontent{padding:5px;line-height: 150%;font-size:20px;font-family:"microsoft yahei"}
+.novelbutton{margin:5px 0px;font-size: 14px;line-height: 30px;}
+.novelbutton li{float:left;width:25%;}
+.novelbutton p{margin: 0px auto;height:25px;line-height: 25px;text-align: center; }
+.novelbutton p a{color: #FFF;font-weight:bold; }
+.novelbutton .p1{background-position: -132px -119px;width: 51px;}
+.novelbutton .p2{background-position: -253px -119px;width: 67px;}
+.novelbutton .p3{}
+.currency_head{position: relative; height: 40px; line-height: 40px; background: #47A1DF}
+.currency_head h1 a{color:#fff}
+.currency_head .return{position: absolute; left: 10px; top: 7px; width: 45px; height: 25px;background: #187cc0; border-radius: 3px; text-align: center; line-height: 25px;}
+.currency_head .return a{color: #FFF; font-weight: bold;}
+.currency_head h1{margin: 0px auto; text-align: center; font-size: 14px; color: #FFF; font-weight: bold;}
+.currency_head .homepage{position: absolute; right: 10px; top: 7px;width: 45px; height: 25px;background: #187cc0; border-radius: 3px; text-align: center; line-height: 25px;}
+.currency_head .homepage a{color: #FFF;font-weight: bold;}
+
+.login{margin:30px 10px;font-size:14px;}
+.loginblock{position:relative;border-bottom: 1px solid #e2e2dd;height:60px;overflow: hidden;}
+.loginblock .l{position:absolute;left:0px;top:24px;width:60px;text-align:left;}
+.loginblock .r{position:absolute;top:17px;left:60px;right:10px;max-width: 300px;}
+.loginsave p{position:absolute;top:22px;left:0px;}
+.loginsave input{position:absolute;top:15px;left:110px;height:30px;width:30px;}
+.loginblock .r .p1{height:25px;line-height: 25px;width:100%;border:1px solid #a1d5f9;border-radius:3px;}
+.loginblock .r .p2{height:25px;line-height: 25px;width:30%;border:1px solid #a1d5f9;border-radius:3px;margin-right:10px;}
+.loginblock .r .logincode .p1{width:auto;}
+.loginbtn{text-align: center;border-bottom: none;}
+.loginbtn input{border:1px solid #47A1DF;background:#47A1DF;color:#fff;border-radius: 3px;height:30px;line-height: 30px;width:100px;margin:15px 10px;}
+.userinfo{margin:30px 10px 0px 10px;min-height: 300px;line-height: 30px}
+.userinfo .p1{border-bottom: 1px solid #9cd1f5}
+.userinfo .mybook a{color:red}
+.foot{background: #47A1DF; height: 35px; line-height: 35px; text-align: center; width: 96%; margin: 10px auto; border-radius: 5px;}
+.foot li{float:left;width: 25%;}
+.foot li a{color: #FFF;}
+#login_email1{position: relative;height: 30px; margin-top: 0px; margin-left: 5px; line-height: 21px; }
+#register_code{position: relative;height: 30px; margin-top: 0px; margin-left: 5px; line-height: 21px;}
+.login_currency{width: 97%; height: 30px; margin: 5px auto; line-height: 21px; position: relative;}
+.register_txt{position: absolute; left: 40px; top: 0px; right: 0px; width: 95%;}
+.mybook_nav { background: #D5CCC3; width: 97%; border-radius: 3px; margin:0px auto; height:35px; line-height:35px; overflow:hidden; margin-bottom:5px; margin-top: 10px;}
+.mybook_nav ul li{width:20%; overflow:hidden; float:left; text-align: center;}
+.mybook_nav ul li a{color:#47A1DF; }
+.search{ width: 97%; margin: 10px auto;}
+.search .key{height:25px;width:95%;line-height:20px; border:0px;color:#47A1DF;text-indent:5px;font-size:16px;}
+.search .go{height:24px;width:35px; border:0px; background-color:transparent; z-index:9999;}
+.search .type{background-color:#fff; border:1px solid #CCC;width:50px; height:25px; line-height:25px; text-align:center; font-weight:bold; color:#47A1DF; border-right: 0px; }
+.searchresult{margin:10px;min-height:300px;}
+.searchresult .p1{height:30px;line-height: 30px;border-bottom: 1px solid #9cd1f5;margin-bottom:10px;}
+.searchresult .p2{border:1px solid #9cd1f5;padding:10px;border-radius:5px;margin:20px 0px 200px 0px;color:#999}
+.searchresult .sone{height:30px;line-height: 30px;color:#999;font-weight:bold;}
+.searchresult .sone .author a{color:#999}
+.book_content{width: 97%; margin: 10px auto;}
+.bookcasetitle{height:40px;line-height: 40px;border-bottom: 1px solid #D1BFBD;text-align: center}
+.book_content .p1{font-weight: bold;}
+.book_content .content_frame{ width:95%;border-bottom:1px solid #D1BFBD; margin: 10px auto;padding-bottom:10px;}
+.book_content .content_frame p{height: 30px; line-height: 30px;color:#47A1DF;overflow: hidden;}
+.book_content .content_frame p a{color: #333;}
+.book_content .content_frame .case_del a{display:block;color:#fff;width:80px;background: #816863;text-align: center;border-radius: 3px;}
+.ranking_list{ margin:20px 10px 10px 10px;overflow: hidden}
+.ranking_list li{float: left; width: 25%; text-align: center; margin-bottom: 10px; overflow: hidden;}
+.ranking_list li p{height: 25px; line-height: 25px;margin:0px 5px; border: 1px solid #47A1DF; border-radius: 3px;}
+.ranking_list li a{color:#62baf7}
+.ranking_list .curr p{background: #47A1DF;}
+.ranking_list .curr a{color:#fff}
+.ranking_general{margin: 10px}
+.articlegeneral{position: relative; height: 35px; line-height:35px; overflow: hidden; border-bottom: 1px dashed #a1d5f9; width: 95%; margin: 0px auto; }
+.articlegeneral a{color: #47A1DF;}
+.articlegeneral .p1{position: absolute;color:#666;font-weight:bold;}
+.articlegeneral .p2{position: absolute; left: 35px;font-weight:bold;}
+.articlegeneral .p3{position: absolute; right: 0px; }
+.articlegeneral .p3 a{color: #666;}
+.page{text-align: center;color: #47A1DF;line-height: 40px;}
+.page a{height: 25px ;width: 34px; background: #47A1DF; padding: 4px 10px 4px 10px; margin: 0px 10px 15px 0px; border-radius: 3px; color: #FFF;}
+.page input{height: 25px; width: 50px; background: #47A1DF; color: #FFF; margin-left: 5px;border:1px solid #47A1DF;border-radius:3px;}
+.page #pageinput{height:23px;line-height:23px;background: #FFF; color: #000;padding:0px 5px;}
+.fullbox{margin:10px;}
+.full_content{position: relative; height: 35px; line-height:35px; overflow: hidden; border-bottom: 1px dashed #a1d5f9; width: 95%; margin: 0px auto; }
+.full_content a{ color: #47A1DF;}
+.full_content .p1{position: absolute;color:#666}
+.full_content .p2{position: absolute; left: 35px;font-weight:bold;}
+.full_content .p3{position: absolute; right: 0px; }
+.full_content .p3 a{color: #666;}
+.author_box{width: 96%;margin: 10px auto 10px auto; border: 1px solid #a1d5f9; padding: 10px 0px 10px 0px; border-radius: 5px;}
+.author_novel{color: #666; text-align: center;margin-top: 5px; margin-bottom: 10px;}
+.author_novel span{margin-right: 5px;color: #47A1DF; border: 1px solid #ccc; padding: 3px 5px 5px 7px; border-radius: 5px;}
+.author_content{position: relative; height:40px; line-height:40px; overflow: hidden; border-bottom: 1px dashed #a1d5f9; width: 95%; margin: 0px auto; }
+.author_content a{ color: #47A1DF;font-weight: normal;}
+.author_content .p1{position: absolute;}
+.author_content .p2{position: absolute; left: 35px;}
+.author_content .p3{position: absolute; right: 0px; }
+.author_content .p3 a{color: #666;}
+.history{margin:10px;}
+.history ul li{margin-bottom: 10px;border-bottom: 1px solid #9cd1f5;padding-bottom:10px;}
+.history .p1{border-bottom:1px solid #9cd1f5;height:30px;line-height: 30px;overflow: hidden;}
+.history .p2{margin-bottom: 10px;font-weight:bold;}
+.history .p2 span{padding:2px 7px;background: #9cd1f5;border-radius: 3px;color:#fff;margin-right:10px;}
+.history .p3{margin-bottom: 10px;}
+.history .p3 a{color:#999;}
+.history .p4 a{display: block;background: #9cd1f5;width:70px;height:25px;line-height:25px;color:#fff;text-align: center;border-radius: 5px;font-size: 12px;}
+.jumpcon{border:1px solid #9cd1f5;border-radius:5px;margin:30px 10px 100px 10px;padding:10px;background: #fff}
+.bottomad{margin:3px;}

@@ -1,0 +1,96 @@
+<!DOCTYPE HTML >
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>小说主页</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-12">
+                <h3 style="text-align:center">个人定制小说</h3>
+            </div>
+
+        </div>
+
+
+        <% for(var i = 0;i<data.length;i++){ %>
+
+            <div class="row" style=" margin-top:20px; border:1px solid #a9c9e2;background:#e8f5fe">
+                <div class="col-xs-12">
+                    <a href="/directory?fid=<%= data[i].fid %>">
+                        <h4 style="text-align:center">
+                            <%= data[i].fictionName %>
+                        </h4>
+                    </a>
+                </div>
+                <div class="col-xs-offset-1 col-xs-4">
+                    <h5>最新更新章节</h5>
+                </div>
+                <div class="col-xs-offset-1 col-xs-6">
+                    <a href="#">
+                        <h5>
+                            <%= data[i].lastUpdateTitle %>
+                        </h5>
+                    </a>
+                </div>
+                <div class="col-xs-offset-1 col-xs-4">
+                    <h5>最近浏览章节</h5>
+                </div>
+                <div class="col-xs-offset-1 col-xs-6">
+                    <a href="#">
+                        <h5>
+                            <%= data[i].lastViewTitle %>
+                        </h5>
+                    </a>
+                </div>
+                <div class="col-xs-offset-3 col-xs-3">
+                    <a href="#">
+                        <button type="button" class="btn btn-primary" onclick="confirmDialog('龙王传说')">删除</button>
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="#">
+                        <button type="button" class="btn btn-success">更新</button>
+                    </a>
+                </div>
+            </div>
+
+            <%}%>
+
+                <div class="row " style=" margin-top:20px;background:#ffffdd">
+                    <a href="#">
+                        <div class="col-xs-2 col-xs-offset-2">
+                            <button type="button" class="btn btn-warning" onclick="promptDialog('输入添加的网址')">添加小说</button>
+                        </div>
+                        <div class="col-xs-2 col-xs-offset-1">
+                            <button type="button" class="btn btn-success">全部更新</button>
+                        </div>
+                    </a>
+                </div>
+
+
+    </div>
+    <script type="text/javascript">
+        function confirmDialog(str) {
+            confirm("确认删除" + str);
+        }
+
+
+        function promptDialog() {
+            var addUrl = prompt("输入添加的网址：");
+            if (addUrl != null) {
+
+            } else {
+
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>
+		<%= ftitle %>
+	</title>
+	<meta name="keywords" content=<%= ftitle %>> 
+	<meta name="MobileOptimized" content="240">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="Cache-Control" content="max-age=0">
+	<meta http-equiv="Cache-Control" content="no-transform ">
+	<link rel="stylesheet" type="text/css" href="./css/list.css">
+</head>
+
+<body class="chapterlist">
+	<div class="currency_head">
+		<div class="return">
+			<a href="javascript:history.go(-1);">返回</a>
+		</div>
+		<h1>
+			<a href="#">
+				<%= ftitle %>
+			</a>
+		</h1>
+		<div class="homepage">
+			<a href="/">首页</a>
+		</div>
+	</div>
+
+	<div class="infotype">
+		<p>最近章节：
+			<a style="color:red;" href="  ">第1314章 </a>
+		</p>
+		<p>最近浏览：
+			<a style="color:red;" href="  ">第1300章 </a>
+		</p>
+	</div>
+
+	<ul class="chapters">
+		<% for(var i = 0;i<list.length;i++){ %>
+			<li>
+				<a href="/content?fid=<%= fid %>&section=<%= i %>" >
+						<span><%= list[i] %></span>
+				</a>
+			</li>
+			<% } %>
+	</ul>
+
+
+
+	<!-- <div class="page">
+		<a href="  ">上一页</a>
+		<a href="  ">下一页</a>
+		<a href="  ">尾页</a>
+	</div>
+	<div class="page">输入页数
+		<input id="pageinput" size="4">
+		<input type="button" value="跳转" onclick="page()">
+		<br>(第1/27页)当前50章/页
+	</div> -->
+
+	<div class="footer">
+		<div class="footer_info">
+			<span>
+				<a href="/">返回首页</a>
+			</span>
+
+			<span>
+				<a href="#" rel="nofollow">↑返回顶部</a>
+			</span>
+		</div>
+	</div>
+</body>
+
+</html>

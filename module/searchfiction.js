@@ -10,17 +10,26 @@ function findSync(fid) {
     fid = process.cwd() + '/bookData/' + fid;
     let result = new Array();
     let files = fs.readdirSync(fid);
-    files.forEach((val, index) => {
-
-        var tempvals = val.split('.');
-        var resIndex = parseInt(tempvals[0]);
+    for(var i =0 ;i<files.length;i++){
+        var tempvals = files[i].split('.');
+        var resIndex = parseInt(tempvals[0]); 
         var title = tempvals[0].replace(resIndex, "");
-
         if (tempvals[1] == 'json') {
-            result.insert(resIndex, title);
+            result[resIndex] = title;
         }
 
-    });
+    }
+    // files.forEach((val, index) => {
+
+    //     var tempvals = val.split('.');
+    //     var resIndex = parseInt(tempvals[0]);
+    //     var title = tempvals[0].replace(resIndex, "");
+
+    //     if (tempvals[1] == 'json') {
+    //         result.insert(resIndex, title);
+    //     }
+
+    // });
     return result;
 
 }

@@ -7,7 +7,7 @@ var refreshDb = require('../module/refreshDb');
 
 module.exports = (app) => {
   app.get('/', (req, res) => {
-    var dataBase = JSON.parse(fs.readFileSync(process.cwd() + '/module/db.json'));
+    var dataBase = JSON.parse (fs.readFileSync(process.cwd() + '/module/db.json'));
     dataBase = refreshDb(dataBase);
     res.render('home', {
       data: dataBase

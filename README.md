@@ -2,10 +2,10 @@
 This is a programme that show your favaorite fiction,and it does not show  any advertisement
 
 ## feature
-No sqls 
-Install easily
-No advertisement
-Chasing books
+1.No sqls 
+2.Install easily
+3.No advertisement
+4.Chasing books
 
 ## steps to install
 

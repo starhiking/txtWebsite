@@ -3,10 +3,12 @@ var getList = require('../module/searchfiction');
 var getContent = require('../module/searchcontent');
 var getFictionMes = require("../module/spiderFiction")
 var getNameById = require('../module/getNameById');
+var refreshDb = require('../module/refreshDb');
 
 module.exports = (app) => {
   app.get('/', (req, res) => {
     var dataBase = JSON.parse(fs.readFileSync(process.cwd() + '/module/db.json'));
+    dataBase = refreshDb(dataBase);
     res.render('home', {
       data: dataBase
     });
@@ -33,8 +35,7 @@ module.exports = (app) => {
     var fid = queryResult.fid; //小说序号
     var section = queryResult.section; //章节序号
     var titleName = getNameById(fid);
-    //文件夹存取改成数字fid命名
-    //name = '我的姐姐是大明星' 
+    
     var backresult = getContent(fid, section);
     if (backresult.isExist == false) {
       res.redirect('/directory?fid=' + fid);

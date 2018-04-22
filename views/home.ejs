@@ -40,12 +40,12 @@
                     </a>
                 </div>
                 <div class="col-xs-offset-1 col-xs-4">
-                    <h5>最近浏览章节</h5>
+                    <h5>最近更新时间</h5>
                 </div>
                 <div class="col-xs-offset-1 col-xs-6">
                     <a href="#">
                         <h5>
-                            <%= data[i].lastViewTitle %>
+                            <%= data[i].lastUpdateTime %>
                         </h5>
                     </a>
                 </div>
@@ -55,7 +55,7 @@
                     </a>
                 </div>
                 <div class="col-xs-3">
-                    <a href="#">
+                    <a href="/update?fid=<%= data[i].fid %>">
                         <button type="button" class="btn btn-success">更新</button>
                     </a>
                 </div>

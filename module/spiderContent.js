@@ -2,8 +2,10 @@ var fs = require('fs');
 var request = require("request");
 var iconv = require('iconv-lite');
 var cheerio = require('cheerio');
+var Path = process.cwd() + '/bookData/';
 
-async function getSinglePage(page,heading) {
+async function getSinglePage(page,id) {
+
 
     var options = {
         url:page.url,
@@ -26,7 +28,7 @@ async function getSinglePage(page,heading) {
         var $ = cheerio.load(transbody);
         var content = JSON.stringify($("#content").text());
         
-        fs.writeFile('txt/'+ heading+'/' +page.title+'.json',content,{flag:'w',encoding:'utf-8'},function (err) {
+        fs.writeFile(Path+ id+'/' +page.title+'.json',content,{flag:'w',encoding:'utf-8'},function (err) {
             if(err)
                 console.log(err);
             else    

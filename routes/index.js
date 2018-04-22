@@ -18,16 +18,16 @@ module.exports = (app) => {
   // /directory?fid=1; 目录页面
   app.get('/directory', (req, res) => {
     var fid = req.query.fid;
+
     var fictionName = getNameById(fid);
     var fictionList = getList(fid);
     var data = {
       list: fictionList,
       fid: fid,
-      ftitle: fictionName //小说名字
+      ftitle: fictionName, //小说名字
     }
     res.render('list', data);
   });
-
 
   // /content?fid=number&section=number  
   app.get('/content', (req, res) => {
@@ -59,8 +59,24 @@ module.exports = (app) => {
     dbOperation.add(url);
     res.redirect('/');
     
-  })
+  });
 
+  app.get('/update',(req,res)=>{
+    var fid = req.query.fid;
+    dbOperation.update(fid);
+    res.redirect('/');
+
+  });
+
+  app.get('/updateAll',(req,res)=>{
+    var dataBase = JSON.parse (fs.readFileSync(process.cwd() + '/module/db.json'));
+    dataBase.forEach(element => {
+      dbOperation.update(element.fid);
+    });
+
+    res.redirect('/');
+
+  })
 
 }
 

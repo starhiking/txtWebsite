@@ -1,6 +1,7 @@
 var fs = require('fs');
 var Path = process.cwd() + '/module/db.json';
 var addMes = require('./getAllMesFromSpider');
+var startSpider = require('./startSpider');
 
 //将object写入文件 ---> db操作之后重写文件操作
 function write(db) {
@@ -22,6 +23,7 @@ function deleteFiction(fid) {
     }
 }
 
+
 //新增小说
 function addFiction(url) {
     //先判断是否已经存在这个url
@@ -39,16 +41,28 @@ function addFiction(url) {
         }
     }
     
-    if (isExist) {
+    if (!isExist) {
+        //先加入数据库
         addMes(url,dataBase);
+
     } 
-
-
-
 }
+
+function updateFiction(fid){
+    
+    var dataBase = JSON.parse(fs.readFileSync(Path));
+    for (var i = 0; i < dataBase.length; i++) {
+        if (dataBase[i].fid == fid) {
+            startSpider(dataBase[i]);
+            break;
+        }
+    }   
+}
+
 
 module.exports = {
     add: addFiction,
-    delete: deleteFiction
+    delete: deleteFiction,
+    update:updateFiction
 
 }

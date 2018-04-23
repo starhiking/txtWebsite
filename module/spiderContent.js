@@ -40,13 +40,3 @@ async function getSinglePage(page,id) {
 }
 
 module.exports = getSinglePage;
-
-//测试数据
-//var url = 'http://www.biquge5200.com/42_42714/151062611.html';
-    
-//var testpage = {
-//     url :url,
-//     title:"哈哈哈"
-// }
-
-//getSinglePage(testpage)

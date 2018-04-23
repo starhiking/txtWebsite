@@ -39,7 +39,7 @@ module.exports = (app) => {
     
     var backresult = getContent(fid, section);
     if (backresult.isExist == false) {
-      res.redirect('/directory?fid=' + fid);
+     res.redirect('/directory?fid=' + fid);
     } else {
       backresult.ftitle = titleName;
       res.render('content', backresult);
@@ -70,6 +70,7 @@ module.exports = (app) => {
 
   app.get('/updateAll',(req,res)=>{
     var dataBase = JSON.parse (fs.readFileSync(process.cwd() + '/module/db.json'));
+    dataBase = refreshDb(dataBase);
     dataBase.forEach(element => {
       dbOperation.update(element.fid);
     });

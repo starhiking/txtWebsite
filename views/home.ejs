@@ -13,7 +13,7 @@
 
         <div class="row">
             <div class="col-xs-12">
-                <h3 style="text-align:center">个人定制小说</h3>
+                <h3 style="text-align:center">个人追书</h3>
             </div>
 
         </div>
@@ -68,6 +68,8 @@
                         <div class="col-xs-2 col-xs-offset-2">
                             <button type="button" class="btn btn-warning" onclick="promptDialog('输入添加的网址')">添加小说</button>
                         </div>
+                    </a>
+                    <a href="/updateAll">
                         <div class="col-xs-2 col-xs-offset-1">
                             <button type="button" class="btn btn-success">全部更新</button>
                         </div>
@@ -90,7 +92,7 @@
                 if (addUrl.split('/')[2] == 'www.biquge5200.com')
                     self.location = '/add?url=' + addUrl;
                 else alert("目前只支持笔趣阁");
-                
+
             } else {
 
             }

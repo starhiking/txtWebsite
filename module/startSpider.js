@@ -15,7 +15,7 @@ var header = {
 
 
 module.exports = function getFiction(data) {
-    
+
     var url = data.titleUrl;
     var id = data.fid;
     var record = getNum(id);
@@ -44,7 +44,7 @@ module.exports = function getFiction(data) {
 
         fs.mkdir(process.cwd() + '/bookData/' + data.fid, 0777, function (err) {
             if (err) {
-                console.log(err);
+                console.error(err);
                 console.log("创建" + data.fid + "目录失败");
             } else {
                 console.log("创建" + data.fid + "目录成功");
@@ -67,28 +67,25 @@ module.exports = function getFiction(data) {
                 break;
             }
         }
-        console.log(pages.length);
+
         getPage(); //递归生成文件
 
     });
-    
-    
+
+
     function getPage() { //再封装下singlepage 用于递归
-        
-        if (record >= pages.length)
-        {
-            console.log("id为%d的小说下载完毕",id);
-            return true;
+
+        if (record >= pages.length) {
+            console.log("id为%d的小说下载完毕", id);
+        } else {
+            pages[record].title = '' + record + pages[record].title;
+            getSinglePage(pages[record++], id);
+            setTimeout(getPage, 500);
         }
-            
-        pages[record].title = '' + record + pages[record].title;
-        getSinglePage(pages[record++], id);
-        setTimeout(getPage, 1000);
+
     }
 
-
-
-};    
+};
 
 
 //去除特殊字符

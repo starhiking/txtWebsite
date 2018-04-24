@@ -1,8 +1,13 @@
 # txtWebsite
 
+# Create 2018-04-24
 This is a programme that show your favaorite fiction,and it does not show  any advertisement
 
-## feature
+## Thanks
+Thanks for biquge fiction website , we worm this station . And if you use my programme,please use the link of catalog in  https://www.biquge5200.com/
+At present , only this source we have worm
+
+## Feature
 
 1.No sqls
 
@@ -12,7 +17,7 @@ This is a programme that show your favaorite fiction,and it does not show  any a
 
 4.Chasing books
 
-## steps to install
+## Steps to install
 
 ### step 1
 
@@ -33,4 +38,4 @@ This is a programme that show your favaorite fiction,and it does not show  any a
 
 ### step 4
 
-input ${ip}:3000 in your browerser
+input ${ip}:3000 in your browser

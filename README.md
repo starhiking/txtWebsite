@@ -22,6 +22,11 @@ This is a programme that show your favaorite fiction,and it does not show  any a
 
 ```cd txtWebsite && npm install```
 
+```mkdir bookData```
+
+```touch module/db.json```
+
+
 ### step 3
 
 ```npm start```

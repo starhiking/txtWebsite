@@ -58,4 +58,6 @@ typings/
 # dotenv environment variables file
 .env
 
+.json
+
 module/db.json

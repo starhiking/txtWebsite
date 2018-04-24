@@ -5,7 +5,7 @@ var iconv = require('iconv-lite');
 var cheerio = require('cheerio');
 var getSinglePage = require('./spiderContent');
 var getNum = require('./findNum');
-
+var Path = process.cwd() + '/module/db.json';
 
 var header = {
     'Host': 'www.biquge5200.com',
@@ -21,6 +21,15 @@ module.exports = function getFiction(data) {
     var record = getNum(id);
     var pages = new Array; //用来存放每个详细页面链接
 
+    var dataBase = JSON.parse(fs.readFileSync(Path));
+
+    var index = 0;//找到fid对应的index序号
+    while(1)
+    {
+        if(dataBase[index].fid == id)
+            break;
+        ++index;
+    }
 
     var options = {
         url: url,
@@ -39,6 +48,15 @@ module.exports = function getFiction(data) {
 
         var transbody = iconv.decode(body, 'GBK');
         var $ = cheerio.load(transbody);
+
+        //更新小说最新章节和时间
+        var lastUpdateTitle = $("#list dd a").eq(0).text().replace(/\s+/g,"");
+        var lastUpdateTime = $("#info>p").eq(-1).text().split("：")[1];
+
+        dataBase[index].lastUpdateTime = lastUpdateTime;
+        dataBase[index].lastUpdateTitle = lastUpdateTitle;
+
+        fs.writeFile(Path, JSON.stringify(dataBase));
 
         var links = $("dd>a");
 

@@ -8,8 +8,6 @@ function write(db) {
     fs.writeFileSync(Path, JSON.stringify(db));
 }
 
-//增删查改
-
 //删除小说
 function deleteFiction(fid) {
     //修改fid 的状态
@@ -65,4 +63,4 @@ module.exports = {
     delete: deleteFiction,
     update:updateFiction
 
-}
+}   

@@ -29,7 +29,12 @@ At present , only this source we have worm
 
 ```mkdir bookData```
 
-```touch module/db.json```
+```vim module/db.json```
+
+insert a pair of square brackets ```[]```
+ into db.json 
+
+![](./screenshoot.png)    
 
 
 ### step 3
